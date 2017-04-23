@@ -1,0 +1,135 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VAC_ZoneControl.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="RepeaterDen" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">d:\XBMC\audio\RepeaterDen.exe</Value>
+    </Setting>
+    <Setting Name="RepeaterKitchen" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">d:\XBMC\audio\RepeaterKitchen.exe</Value>
+    </Setting>
+    <Setting Name="RepeaterDining" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">d:\XBMC\audio\RepeaterDining.exe</Value>
+    </Setting>
+    <Setting Name="RepeaterLiving" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">d:\XBMC\audio\RepeaterLiving.exe</Value>
+    </Setting>
+    <Setting Name="RepeaterOutsideHouse" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">d:\XBMC\audio\RepeaterOutsideHouse.exe</Value>
+    </Setting>
+    <Setting Name="RepeaterOutsideFence" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">d:\XBMC\audio\RepeaterOutsideFence.exe</Value>
+    </Setting>
+    <Setting Name="RepeaterDeviceZoneDen" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Z1 (2- kX 10k2 Audio (3550) - G</Value>
+    </Setting>
+    <Setting Name="RepeaterDeviceZoneKitchen" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Z2 (2- kX 10k2 Audio (3550) - G</Value>
+    </Setting>
+    <Setting Name="RepeaterDeviceZoneDining" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Z3 (2- kX 10k2 Audio (3550) - G</Value>
+    </Setting>
+    <Setting Name="RepeaterDeviceZoneLiving" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Z4 (kX 10k2 Audio (3550) - Gene</Value>
+    </Setting>
+    <Setting Name="RepeaterDeviceZoneOutsideHouse" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Z5 (kX 10k2 Audio (3550) - Gene</Value>
+    </Setting>
+    <Setting Name="RepeaterDeviceZoneOutsideFence" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Z6 (kX 10k2 Audio (3550) - Gene</Value>
+    </Setting>
+    <Setting Name="DeviceSourceDefault" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Line 1 (Virtual Audio Cable)</Value>
+    </Setting>
+    <Setting Name="DeviceSourceIPod" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">kX Wave SB0350 10k2 [8000] 0/1</Value>
+    </Setting>
+    <Setting Name="DeviceSourceTurntable" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">kX Wave SB0350 10k2 [8800] 0/1</Value>
+    </Setting>
+    <Setting Name="DeviceSourceLineIn" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">NVIDIA(R) nForce(TM) Audio</Value>
+    </Setting>
+    <Setting Name="RepeaterBitsPerSample" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">16</Value>
+    </Setting>
+    <Setting Name="RepeaterChannels" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="RepeaterBufferMS" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">200</Value>
+    </Setting>
+    <Setting Name="RepeaterBuffers" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="DeviceZoneTelevision" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">NVIDIA(R) nForce(TM) Audio</Value>
+    </Setting>
+    <Setting Name="RepeaterTelevision" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\xbmc\Audio\RepeaterTelevision.exe</Value>
+    </Setting>
+    <Setting Name="kxDevice1" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">kX Control SB0350 10k2 [8000]</Value>
+    </Setting>
+    <Setting Name="kxDevice2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">kX Control SB0350 10k2 [8800]</Value>
+    </Setting>
+    <Setting Name="ChannelDen" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ChannelKitchen" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="ChannelDining" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="ChannelLiving" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ChannelOutsideHouse" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="ChannelOutsideFence" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="VolumeDen" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="VolumeKitchen" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="VolumeDining" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="VolumeLiving" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="VolumeOutsideHouse" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="VolumeOutsideFence" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PlaybackDeviceZoneDen" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Z1</Value>
+    </Setting>
+    <Setting Name="PlaybackDeviceZoneKitchen" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Z2</Value>
+    </Setting>
+    <Setting Name="PlaybackDeviceZoneDining" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Z3</Value>
+    </Setting>
+    <Setting Name="PlaybackDeviceZoneLiving" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Z4</Value>
+    </Setting>
+    <Setting Name="PlaybackDeviceZoneOutsideHouse" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Z5</Value>
+    </Setting>
+    <Setting Name="PlaybackDeviceZoneOutsideFence" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Z6</Value>
+    </Setting>
+    <Setting Name="PlaybackDeviceZoneTelevision" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,65 @@
+﻿<Window x:Class="VAC_ZoneControl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:VAC_ZoneControl"
+        Title="Zone Control" Topmost="True" Height="768" Width="1024" Background="Black" Foreground="#00000000" WindowState="Maximized" WindowStyle="None">
+    <Window.Resources>
+        <local:RoundingConverter x:Key="conv" />
+        
+    </Window.Resources>
+    <Grid>
+        <Label Content="SOURCES" Height="53" HorizontalAlignment="Left" Margin="36,6,0,0" Name="label1" VerticalAlignment="Top" FontSize="30" Foreground="White" Width="146" />
+        <Label Content="ZONES" FontSize="30" Foreground="White" Height="53" HorizontalAlignment="Left" Margin="359,6,0,0" Name="label2" VerticalAlignment="Top" Width="146" />
+        
+        <StackPanel HorizontalAlignment="Left" Margin="36,66,0,134">
+            <ToggleButton Name="btnSourceDefault" Content="DEFAULT"  Height="60" Width="200" Focusable="False" Margin="10" Checked="btnSource_Checked" Unchecked="btnSource_Unchecked"/>
+            <ToggleButton Name="btnSourceIPod" Content="IPOD" Height="60" Width="200" Focusable="False" Margin="10" Checked="btnSource_Checked" Unchecked="btnSource_Unchecked" />
+            <ToggleButton Name="btnSourceTurntable" Content="TURNTABLE" Height="60" Width="200" Focusable="False" Margin="10" Checked="btnSource_Checked" Unchecked="btnSource_Unchecked" />
+            <ToggleButton Name="btnSourceLineIn" Content="LINE IN" Height="60" Width="200" Focusable="False" Margin="10" Checked="btnSource_Checked" Unchecked="btnSource_Unchecked" />
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Canvas.Left="200" Canvas.Top="0" Margin="359,66,0,0" VerticalAlignment="Top">
+            <DockPanel Height="60" Margin="10">
+                <ToggleButton Name="btnZoneDen"  Content="DEN" Height="60" Width="200" Checked="btnZone_Checked" Unchecked="btnZone_Unchecked" />
+                <Slider Height="33" Name="volDen" Width="215" Margin="10" SmallChange="1" TickFrequency="10" TickPlacement="Both" Maximum="100" LargeChange="10" ValueChanged="sliderVol_ValueChanged" />
+                <TextBlock Height="23" Width="30" Name="txtVolDen" Text="{Binding ElementName=volDen, Path=Value, Converter={StaticResource conv}}" Style="{StaticResource TextBlockStyle}" />
+            </DockPanel>
+            <DockPanel Height="60" Margin="10">
+                <ToggleButton Name="btnZoneKitchen" Content="KITCHEN" Height="60" Width="200" Checked="btnZone_Checked" Unchecked="btnZone_Unchecked"/>
+                <Slider Height="33" Name="volKitchen" Width="215" Margin="10" SmallChange="1" TickFrequency="10" TickPlacement="Both" Maximum="100" LargeChange="10" ValueChanged="sliderVol_ValueChanged" />
+                <TextBlock Height="23" Width="30" Name="txtVolKitchen" Text="{Binding ElementName=volKitchen, Path=Value, Converter={StaticResource conv}}" Style="{StaticResource TextBlockStyle}" />
+            </DockPanel>
+
+            <DockPanel Height="60" Margin="10">
+                <ToggleButton Name="btnZoneDining" Content="DINING ROOM" Height="60" Width="200" Checked="btnZone_Checked" Unchecked="btnZone_Unchecked"/>
+                <Slider Height="33" Name="volDining" Width="215" Margin="10" SmallChange="1" TickFrequency="10" TickPlacement="Both" Maximum="100" LargeChange="10" ValueChanged="sliderVol_ValueChanged" />
+                <TextBlock Height="23" Width="30" Name="txtVolDining" Text="{Binding ElementName=volDining, Path=Value, Converter={StaticResource conv}}" Style="{StaticResource TextBlockStyle}" />
+            </DockPanel>
+
+            <DockPanel Height="60" Margin="10">
+                <ToggleButton Name="btnZoneLiving" Content="LIVING ROOM" Height="60" Width="200" Checked="btnZone_Checked" Unchecked="btnZone_Unchecked"/>
+                <Slider Height="33" Name="volLiving" Width="215" Margin="10" SmallChange="1" TickFrequency="10" TickPlacement="Both" Maximum="100" LargeChange="10" ValueChanged="sliderVol_ValueChanged" />
+                <TextBlock Height="23" Width="30" Name="txtVolLiving" Text="{Binding ElementName=volLiving, Path=Value, Converter={StaticResource conv}}" Style="{StaticResource TextBlockStyle}" />
+            </DockPanel>
+
+            <DockPanel Height="60" Margin="10">
+                <ToggleButton Name="btnZoneOutsideHouse" Content="OUTSIDE (HOUSE)" Height="60" Width="200" Checked="btnZone_Checked" Unchecked="btnZone_Unchecked"/>
+                <Slider Height="33" Name="volOutsideHouse" Width="215" Margin="10" SmallChange="1" TickFrequency="10" TickPlacement="Both" Maximum="100" LargeChange="10" ValueChanged="sliderVol_ValueChanged"  />
+                <TextBlock Height="23" Width="30" Name="txtVolOutsideHouse" Text="{Binding ElementName=volOutsideHouse, Path=Value, Converter={StaticResource conv}}" Style="{StaticResource TextBlockStyle}" />
+            </DockPanel>
+
+            <DockPanel Height="60" Margin="10">
+                <ToggleButton Name="btnZoneOutsideFence" Content="OUTSIDE (FENCE)" Height="60" Width="200" Checked="btnZone_Checked" Unchecked="btnZone_Unchecked"/>
+                <Slider Height="33" Name="volOutsideFence" Width="215" Margin="10" SmallChange="1" TickFrequency="10" TickPlacement="Both" Maximum="100" LargeChange="10" ValueChanged="sliderVol_ValueChanged" />
+                <TextBlock Height="23" Width="30" Name="txtVolOutsideFence" Text="{Binding ElementName=volOutsideFence, Path=Value, Converter={StaticResource conv}}" Style="{StaticResource TextBlockStyle}" />
+            </DockPanel>
+
+            <DockPanel Height="60" Margin="10" HorizontalAlignment="Left">
+                <ToggleButton Name="btnZoneTelevision" Content="TELEVISION" Height="60" Width="200" Checked="btnZone_Checked" Unchecked="btnZone_Unchecked"/>
+                
+            </DockPanel>
+        </StackPanel>
+        <Button Content="CLOSE" Height="60" HorizontalAlignment="Right" Margin="0,0,12,12" Name="btnClose" VerticalAlignment="Bottom" Width="200" Click="btnClose_Click" />
+    </Grid>
+   
+</Window>
+
